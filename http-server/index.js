@@ -3,7 +3,7 @@ const fs = require('fs');
 const path = require('path');
 const minimist = require('minimist');
 
-// Parse port from command line args, default to 3000
+
 const args = minimist(process.argv.slice(2));
 const port = args.port || 3000;
 
