@@ -12,20 +12,21 @@
     <div class="container">
         <form id="registrationForm" action="/submit-registration" method="POST">
             <h2>Registration Form</h2>
-            <label>Name</label>
-            <input type="text" id="name" required placeholder="Enter full name"/>
 
-            <label>Email</label>
-            <input type="email" id="email" required placeholder="Enter email" />
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required placeholder="Enter full name" />
 
-            <label>Password</label>
-            <input type="password" id="password" required placeholder="Enter password" />
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required placeholder="Enter email" />
 
-            <label>Date of Birth</label>
-            <input type="date" id="dob" required />
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required placeholder="Enter password" />
 
-            <label>
-                <input type="checkbox" id="terms" />
+            <label for="dob">Date of Birth</label>
+            <input type="date" id="dob" name="dob" required />
+
+            <label for="terms">
+                <input type="checkbox" id="terms" name="terms" required />
                 Accept Terms & Conditions
             </label>
 
