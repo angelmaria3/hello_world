@@ -13,11 +13,11 @@ const server = http.createServer((req, res) => {
     if (req.url === '/') {
         serveFile('home.html', 'text/html', res);
     }
-    else if (req.url === '/project.html') {
+    else if (req.url === '/project') {
         serveFile('project.html', 'text/html', res);
     }
-    else if (req.url === '/registration' || req.url === '/Registration.html') {
-        serveFile('Registration.html', 'text/html', res);
+    else if (req.url === '/register') {
+        serveFile('registration.html', 'text/html', res);
     }
     else if (req.url === '/style.css') {
         serveFile('style.css', 'text/css', res);
