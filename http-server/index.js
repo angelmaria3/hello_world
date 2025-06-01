@@ -16,7 +16,7 @@ const server = http.createServer((req, res) => {
     else if (req.url === '/project') {
         serveFile('project.html', 'text/html', res);
     }
-    else if (req.url === '/register') {
+    else if (req.url === '/registration') {
         serveFile('registration.html', 'text/html', res);
     }
     else if (req.url === '/style.css') {
